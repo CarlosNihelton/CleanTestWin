@@ -1,0 +1,203 @@
+ ## CONFIGURATION
+ 
+ cmake -S . -B _build                                                                                                                                            ─╯
+-- Building for: Visual Studio 17 2022
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.25357.
+-- The C compiler identification is MSVC 19.35.32217.1
+-- The CXX compiler identification is MSVC 19.35.32217.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Target 'doc' disabled (requires doxygen)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/PoC/CleanTestWin/_build
+
+
+## BUILD
+
+cmake --build .\_build\                                                                                                                                         ─╯
+MSBuild version 17.5.1+f6fdcf537 for .NET Framework
+
+  Checking Build System
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/CMakeLists.txt
+  Main.cpp
+  clntst-main-objlib.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\clntst-main-objlib.dir\Debug\clntst-main-objlib.lib
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/CMakeLists.txt
+  CaseRegistrar.cpp
+  ExpectationObserver.cpp
+  ObservationSetup.cpp
+  Registry.cpp
+  SuiteRegistrationSetup.cpp
+  Badges.cpp
+  CaseEvaluator.cpp
+  CaseReporter.cpp
+  CaseResult.cpp
+  ColorTable.cpp
+  ColoringSetup.cpp
+  Conductor.cpp
+  Configuration.cpp
+  HelpDisplay.cpp
+  JUnitExport.cpp
+  Main.cpp
+  NameFilter.cpp
+  Observer.cpp
+  TreeDisplay.cpp
+  XMLEncoder.cpp
+  Generating Code...
+  Compiling...
+  OSyncStream.cpp
+  UTF8Encoder.cpp
+  UTF8Utils.cpp
+  Generating Code...
+  clntst-objlib.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\clntst-objlib.dir\Debug\clntst-objlib.lib
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/CMakeLists.txt
+  cleantest-static.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\Debug\cleantest-static.lib
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/CMakeLists.txt
+  cleantest-main-static.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\Debug\cleantest-main-static.lib
+  Building Custom Rule D:/PoC/CleanTestWin/CMakeLists.txt
+  test.cpp
+  clean-test-win.vcxproj -> D:\PoC\CleanTestWin\_build\Debug\clean-test-win.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/CMakeLists.txt
+  Auto build dll exports
+     Creating library D:/PoC/CleanTestWin/_build/_deps/cleantest-build/Debug/cleantest-shared.lib and object D:/PoC/CleanTestWin/_build/_deps/cleantest-build/Debug/c
+  leantest-shared.exp
+  cleantest-shared.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\Debug\cleantest-shared.dll
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/CMakeLists.txt
+  cleantest-main-shared.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\Debug\cleantest-main-shared.lib
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Complicated.cpp
+  complicated.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\complicated.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Configuration.cpp
+  configuration.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\configuration.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Demo.cpp
+  demo.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\demo.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Expect.cpp
+  expect.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\expect.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Expression.cpp
+  expression.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\expression.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Guarded.cpp
+  guarded.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\guarded.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Math.cpp
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Math.cpp(152,43): warning C4996: 'std::complex<int>::complex': warning STL4037: The effect of instantiating the t
+emplate std::complex for any type other than float, double, or long double is unspecified. You can define _SILENCE_NONFLOATING_COMPLEX_DEPRECATION_WARNING to suppres
+s this warning. [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\math.vcxproj]
+  math.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\math.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  NameFilter.cpp
+  namefilter.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\namefilter.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  OSyncStream.cpp
+  osyncstream.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\osyncstream.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Registration.cpp
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(157,15): error C2678: binary '|': no operator found which takes a left-hand operand of type 'std
+::tuple<int,const char *>' (or there is no acceptable conversion) [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\cstddef(43,39): message : could be 'std::byte std::operator |(const std::by
+te,const std::byte) noexcept' [found using argument-dependent lookup] [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework/CaseRegistrar.h(131,27): message : or       'auto clean_test::framework::operator |(Data
+&&,Case &&)' [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(157,15): message : the associated constraints are not satisfied [D:\PoC\CleanTestWin\_build\_dep
+s\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework/CaseRegistrar.h(130,15): message : the concept 'clean_test::framework::CaseData<std::tupl
+e<int,const char *>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework\CaseRunner.h(77,7): message : the concept 'clean_test::utils::Tuple<std::tuple<int,const
+char *>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test/utils/Tuple.h(33,20): message : the constraint was not satisfied [D:\PoC\CleanTestWin\_build\_deps\
+cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework\CaseRunner.h(78,8): message : the concept 'std::ranges::borrowed_range<std::tuple<int,con
+st char *>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xutility(2415,30): message : the concept 'std::ranges::range<std::tuple<int
+,const char *>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xutility(2232,25): message : the expression is invalid [D:\PoC\CleanTestWin
+\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework\CaseRunner.h(79,9): message : the concept 'std::ranges::range<std::tuple<int,const char *
+>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xutility(2232,25): message : the expression is invalid [D:\PoC\CleanTestWin
+\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(157,15): message : while trying to match the argument list '(std::tuple<int,const char *>, clean
+_test::Test<>)' [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(159,13): error C2641: cannot deduce template arguments for 'clean_test::Test' [D:\PoC\CleanTestW
+in\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(159,13): error C7602: 'clean_test::Test': the associated constraints are not satisfied [D:\PoC\C
+leanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test/framework.h(46,1): message : see declaration of 'clean_test::Test' [D:\PoC\CleanTestWin\_build\_dep
+s\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(159,13): error C2780: 'clean_test::Test<Data...> clean_test::Test(clean_test::Test<Data...>)': e
+xpects 1 arguments - 2 provided [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test/framework.h(27,1): message : see declaration of 'clean_test::Test' [D:\PoC\CleanTestWin\_build\_dep
+s\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(181,41): error C2678: binary '|': no operator found which takes a left-hand operand of type 'std
+::tuple<const int &,std::string>' (or there is no acceptable conversion) [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\cstddef(43,39): message : could be 'std::byte std::operator |(const std::by
+te,const std::byte) noexcept' [found using argument-dependent lookup] [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework/CaseRegistrar.h(131,27): message : or       'auto clean_test::framework::operator |(Data
+&&,Case &&)' [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(181,41): message : the associated constraints are not satisfied [D:\PoC\CleanTestWin\_build\_dep
+s\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework/CaseRegistrar.h(130,15): message : the concept 'clean_test::framework::CaseData<std::tupl
+e<const int &,std::string>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework\CaseRunner.h(77,7): message : the concept 'clean_test::utils::Tuple<std::tuple<const int
+&,std::string>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test/utils/Tuple.h(33,20): message : the constraint was not satisfied [D:\PoC\CleanTestWin\_build\_deps\
+cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework\CaseRunner.h(78,8): message : the concept 'std::ranges::borrowed_range<std::tuple<const i
+nt &,std::string>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xutility(2415,30): message : the concept 'std::ranges::range<std::tuple<con
+st int &,std::string>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xutility(2232,25): message : the expression is invalid [D:\PoC\CleanTestWin
+\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\framework\CaseRunner.h(79,9): message : the concept 'std::ranges::range<std::tuple<const int &,std:
+:string>>' evaluated to false [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xutility(2232,25): message : the expression is invalid [D:\PoC\CleanTestWin
+\_build\_deps\cleantest-build\test\registration.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Registration.cpp(181,41): message : while trying to match the argument list '(std::tuple<const int &,std::string>
+, clean_test::Test<>)' [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\registration.vcxproj]
+  RegistrationAddendum.cpp
+  Generating Code...
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Reporting.cpp
+  reporting.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\reporting.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  ScopeGuard.cpp
+  scopeguard.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\scopeguard.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Shared.cpp
+  shared.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\shared.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Static.cpp
+  static.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\static.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  TreeDisplay.cpp
+  treedisplay.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\treedisplay.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  UTF8.cpp
+  utf8.vcxproj -> D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\Debug\utf8.exe
+  Building Custom Rule D:/PoC/CleanTestWin/_build/_deps/cleantest-src/test/CMakeLists.txt
+  Utils.cpp
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Utils.cpp(27,26): error C2607: static assertion failed [D:\PoC\CleanTestWin\_build\_deps\cleantest-build\test\uti
+ls.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\test\Utils.cpp(27,26): message : the concept 'clean_test::utils::Tuple<std::tuple<int &>>' evaluated to false [D:\PoC\
+CleanTestWin\_build\_deps\cleantest-build\test\utils.vcxproj]
+D:\PoC\CleanTestWin\_build\_deps\cleantest-src\include\clean-test\utils/Tuple.h(33,20): message : the constraint was not satisfied [D:\PoC\CleanTestWin\_build\_deps\
+cleantest-build\test\utils.vcxproj]
